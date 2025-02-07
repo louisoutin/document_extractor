@@ -1298,6 +1298,7 @@ prompt_toolkit = ">=3.0.41,<3.1.0"
 pygments = ">=2.4.0"
 stack_data = "*"
 traitlets = ">=5.13.0"
+typing_extensions = {version = ">=4.6", markers = "python_version < \"3.12\""}
 
 [package.extras]
 all = ["ipython[black,doc,kernel,matplotlib,nbconvert,nbformat,notebook,parallel,qtconsole]", "ipython[test,test-extra]"]
@@ -2456,7 +2457,10 @@ files = [
 ]
 
 [package.dependencies]
-numpy = {version = ">=1.26.0", markers = "python_version >= \"3.12\""}
+numpy = [
+    {version = ">=1.23.2", markers = "python_version == \"3.11\""},
+    {version = ">=1.26.0", markers = "python_version >= \"3.12\""},
+]
 python-dateutil = ">=2.8.2"
 pytz = ">=2020.1"
 tzdata = ">=2022.7"
@@ -4274,7 +4278,7 @@ vision = ["Pillow (>=10.0.1,<=15.0)"]
 type = "git"
 url = "https://github.com/huggingface/transformers.git"
 reference = "HEAD"
-resolved_reference = "ba29a439adbe6f371710d0514659127264ae24b3"
+resolved_reference = "6b550462139655d488d4c663086a63e98713c6b9"
 
 [[package]]
 name = "triton"
@@ -4690,5 +4694,5 @@ cuda = ["torch", "torchvision"]
 
 [metadata]
 lock-version = "2.0"
-python-versions = "~3.12"
-content-hash = "737024e21feb4b9fdfd2d058c66c45319a835335f6ecd6639dd213d423ead7a7"
+python-versions = "^3.11"
+content-hash = "e65718b980e33fa763cdc324fdf9cb57494c65aa3de3e39750645122ba1934b8"

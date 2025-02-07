@@ -6,7 +6,7 @@ authors = ["Your Name <your.email@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "~3.12"
+python = "^3.11"
 transformers = {git = "https://github.com/huggingface/transformers.git"}
 trl = {git = "https://github.com/huggingface/trl.git"}
 datasets = "^3.2.0"
